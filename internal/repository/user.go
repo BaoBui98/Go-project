@@ -6,7 +6,7 @@ type InMemoryUserRepository struct {
 	users []model.Users
 }
 
-func newUserRepository() *InMemoryUserRepository {
+func NewUserRepository() *InMemoryUserRepository {
 	return &InMemoryUserRepository{
 		users: make([]model.Users, 0),
 	}
